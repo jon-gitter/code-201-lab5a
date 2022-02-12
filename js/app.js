@@ -73,7 +73,6 @@ let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
   return [sum(sum(testArray[0], testArray[1])[0], testArray[2])[0], `${testArray[0]},${testArray[1]},${testArray[2]} was passed in as an array of numbers, and ${sum(sum(testArray[0], testArray[1])[0], testArray[2])[0]} is their sum.`];
-  //return [9, `2,3,4 was passed in as an array of numbers, and 9 is their sum.`];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
@@ -94,11 +93,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+  return [multiply(multiply(testArray[0], testArray[1])[0], testArray[2])[0], `The numbers ${testArray[0]},${testArray[1]},${testArray[2]} have a product of ${multiply(multiply(testArray[0], testArray[1])[0], testArray[2])[0]}.`];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
